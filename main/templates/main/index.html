@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{% block body %}
+    <main>
+    {% for el in product %}
+      <div class="alert alert-warning mt-2"
+        <h3>{{ el.title }}</h3>
+        <p>{{ el.email }}</p>
+      </div>  
+    {% endfor %} 
+    
+      
+  
+    
+
+    
+{% endblock %}
+

@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{% block body %}
+  <h1>Введите данные</h1>
+  <form method="post">
+    {% csrf_token %} 
+    {{ form.email }}<br>
+    {{ form.playlist }}<br>
+    {{ form.qty }}<br>
+    {{ form.comment }}<br>
+    
+    <button type="submit" class="btn btn-success">Заказать</button>
+    <span>{{ error }} </span>
+  </form>
+    
+
+    
+{% endblock %}
